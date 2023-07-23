@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="nw.css">
+    <title>Changing Background Color with Linear Gradient</title>
+</head>
+<body id="color-box">
+    
+       
+    
+
+    <script>
+        function login() {
+            let a=document.getElementById("card");
+            a.style.transform="rotateY(180deg)";
+            let b=document.getElementById("login-btn");
+            b.style.display="none";
+            let c=document.getElementById("signin-btn");
+            c.style.display="block";
+        }
+        function Register() {
+            let a=document.getElementById("card");
+            a.style.transform="rotateY(0deg)";
+            let b=document.getElementById("signin-btn");
+            b.style.display="none";
+            let c=document.getElementById("login-btn");
+            c.style.display="block";
+        }
+    </script>
+   
+
+     <!-- <script>
+        function changeBackgroundColor() {
+            var colorBox=document.getElementById("color-box");
+            var colors=["#ACBFA4","#504746","#BFADA3","#1C1018","#131200","#2A3D45"]; // Array of colors
+            var currentIndex=0;
+
+            setInterval(function() {
+                var startColor=colors[currentIndex]; // Get the current start color
+                currentIndex=(currentIndex+1)%colors.length; // Move to the next color
+                var endColor=colors[currentIndex]; // Get the next end color
+                var gradient="linear-gradient(to right, "+startColor+", "+endColor+")";
+                colorBox.style.background=gradient; // Set the linear gradient
+            },2000); // Change every 2 seconds
+        }
+
+        changeBackgroundColor();
+    </script> --> 
+
+<div class="o">
+    <section id="login">
+        
+        <button onclick="Register()" id="signin-btn">Register</button>
+        <button onclick="login()" id="login-btn">Login</button>
+            <div class="c">
+                <div id="card">
+                    <div id="front">
+                        <h1>Register Now</h1><br>
+                        
+                            
+                                <label for="User-Name">First-Name</label>
+                                <input type="text" id="User-Name" required>
+                            
+                            
+                                <label for="User-Nam">Last-Name</label>
+                                <input type="text" id="User-Nam" required>
+                            
+                            
+                                <label for="password">Password</label>
+                                <input type="password" name="" id=""required>
+                            
+                            
+                                <label for="password">Re-Password</label>
+                                <input type="password" name="" id=""required>
+                            
+                        
+                        <br>
+                        <br>
+                        <button type="submit">submit</button>
+                    </div>
+                    <div id="back">
+                        <h1>Login</h1><br>
+                        
+                            
+                                <label for="User-Name" >User-Name</label>
+                                <input type="text" id="User-Name" required>
+                            
+                           
+                                <label for="password">Password</label>
+                                <input type="password"  name="" id="password" required>
+                            
+
+                        
+                        <button type="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <p>ll</p>
+
+</body>
+
+</html>

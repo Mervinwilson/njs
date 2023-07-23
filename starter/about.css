@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-type: none;
+}
+
+.ab{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(../starter/assets/course-12.jpeg);
+    display: grid;
+    background-attachment: fixed;
+    display: inline-flex;
+    padding: 20px;
+}
+.ab .im img{
+    height: 450px;
+    width: 490px;
+    float: right;
+    margin-right:  80px;
+    background-attachment: fixed;
+    margin-top: 40px;
+    border-radius: 10px;
+}      
+
+.ab .pa .we{
+    color:white;
+}
+.ab .pa .p{
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    height: 120px;
+}

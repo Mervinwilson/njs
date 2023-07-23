@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    /* background:#fdf2f2 */
+    
+    
+    
+}
+/* .k #k{
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: 0;
+  background: linear-gradient(rgba(255, 5, 5, 0.644),rgba(0, 0, 0, 0.596));
+  
+    
+    
+} */
+
+
+#login{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+.c{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    height: 350px;
+    width: 350px;
+    perspective: 600px;
+    border-radius: 20px;
+}
+#card{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-radius:20px ;
+    transform-style: preserve-3d;
+    transition: 1s;
+    box-shadow: 12px 15px 51px black;
+}
+#login-btn{
+    display: block;
+        padding: 10px;
+        border-radius: 10px;
+        border: black;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 4rem;
+        width: 10rem;
+        font-size: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+}
+#signin-btn{
+    display: none;
+        padding: 10px;
+        border-radius: 10px;
+        border: rgb(165, 143, 143);
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 4rem;
+        width: 10rem;
+        font-size: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+}
+#front h1{
+    text-align: center;
+    padding-top: 50px;
+}
+#back h1{
+    text-align: center;
+    padding-top: 50px; 
+}
+#front,#back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+#front{
+    background-color: #999999;
+}
+#back{
+    transform: rotateY(180deg);
+    background-color: #9CADCE;
+}
+.o{
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.799)),url( ./assets/course-1.jpeg);
+}
+div{
+    min-height: 100vh;
+    width: 100vw;
+}
